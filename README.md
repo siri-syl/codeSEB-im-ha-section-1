@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Section 1: Hiring Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이번 Section 1: Hiring Assessment에서는 React를 이용한 갤러리 앱을 만듭니다. 주요 특징은 다음과 같습니다.
 
-## Available Scripts
+- Single Page Application으로, 페이지 두 개(About, Gallery 컴포넌트)가 존재합니다.
+- Gallery 컴포넌트에서는 사진 목록이 썸네일로 존재하고, 썸네일 이미지를 클릭하면 크게 보이는 앱입니다.
 
-In the project directory, you can run:
+## Getting Started
 
-### `yarn start`
+1. `npm install`을 이용해 의존성 모듈(dependencies)를 설치할 수 있습니다.
+2. `npm test`를 통해 테스트를 진행할 수 있습니다.
+3. 테스트 초반에서는 `npm start`를 통해, Gallery 컴포넌트를 눈으로 확인할 수 있습니다.
+  - 테스트 후반에 이르러서는 조건에 따른 라우팅을 적용해야 합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+주어진 모든 테스트를 통과하세요.
 
-### `yarn test`
+## Constraints
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 테스트 케이스(`src/__test__` 이하 파일)를 수정하지 마세요.
+  - 테스트 케이스에 문제가 있다고 판단되는 경우, 리포트해주세요.
 
-### `yarn build`
+## 시연 영상 녹화
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hiring Assessments 완료 후 아래의 안내에 따라 기능 시연 영상을 녹화해서 제출해 주시기 바랍니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 상기 "Requirements" 상의 기능들의 구현 및 시연에 대해 설명하는 녹화를 해주시기 바랍니다.
+2. 기능을 구현하지 못한 경우에도, 자신이 생각하는 기능 구현 방법 등을 어필해 주시기 바랍니다.
+3. 시연 영상은 안내에 따라 `im00-성함-설명영상` 이름의 압축파일을 추후에 안내되는 구글 드라이브에 제출해 주시기 바랍니다.
