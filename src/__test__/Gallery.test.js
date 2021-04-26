@@ -45,7 +45,7 @@ describe('목록에서 선택한 사진은 별도로 크게 보여야 합니다'
 
     render(<Gallery />, { container })
     expect(useStateSpy).toBeCalled()
-    expect(initialValues).toEqual(expect.arrayContaining([images[0]]))
+    expect(initialValues).toEqual(expect.arrayContaining([images[0]])) // 상태의 초기값이 0번째 인덱스의 이미지어야 합니다
 
     useStateSpy.mockRestore()
   })
@@ -60,6 +60,7 @@ describe('목록에서 선택한 사진은 별도로 크게 보여야 합니다'
     })
 
     render(<Gallery />, { container })
+    // 현재 이미지가 hello.jpeg 이라고 가정합니다
     expect(container.querySelector('#current-image').src).toEqual(expect.stringContaining('hello.jpeg'))
     useStateSpy.mockRestore()
   })
@@ -77,17 +78,19 @@ describe('사진 목록에 있는 사진을 클릭하면, 현재 선택한 사�
     render(<Gallery />, { container })
 
     const handler = resq$('a', container).props.onClick;
-    expect(typeof handler).toBe('function')
-    expect(handler.toString()).toMatch('handleClick')
+    expect(typeof handler).toBe('function') // <a> 엘리먼트 클릭시 이벤트 핸들러가 존재합니다
+    expect(handler.toString()).toMatch('handleClick') // <a> 엘리먼트 클릭시 handleClick 함수가 실행됩니다
   })
 
   it('handleClick 함수를 통해 선택한 사진에 대한 상태가 변경되어야 합니다', () => {
     render(<Gallery />, { container })
 
-    fireEvent.click(container.querySelectorAll('a')[1])
-    expect(container.querySelector('#current-image').src).toEqual(expect.stringContaining('cat.jpeg'))
+    fireEvent.click(container.querySelectorAll('a')[1]) // 1번째 인덱스의 썸네일 이미지를 클릭하면
+    expect(container.querySelector('#current-image').src).toEqual(expect.stringContaining('cat.jpeg')) // 현재 이미지가 cat.jpeg가 됩니다
 
-    fireEvent.click(container.querySelectorAll('a')[2])
-    expect(container.querySelector('#current-image').src).toEqual(expect.stringContaining('dog.jpeg'))
+    fireEvent.click(container.querySelectorAll('a')[2]) // 2번째 인덱스의 썸네일 이미지를 클릭하면
+    expect(container.querySelector('#current-image').src).toEqual(expect.stringContaining('dog.jpeg')) // 현재 이미지가 dog.jpeg가 됩니다
+
+    // 이미지 순서는 data/images.js 를 참고하세요
   })
 })
