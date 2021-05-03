@@ -22,9 +22,10 @@ describe('썸네일이 표현되어야 합니다', () => {
     expect(element.classList.contains('thumbnail')).toBeTruthy()
   })
 
-  it('`source` 라는 이름의 props를 전달받아야 합니다', () => {
+  it('`source` 라는 이름의 props으로 이미지 파일 이름을 전달받아야 합니다', () => {
     render(<Thumbnail source="selfie.jpeg" />, { container })
     const props = resq$('Thumbnail', container).props;
+    expect(Thumbnail.length).toBe(1)
     expect(props).toHaveProperty('source', 'selfie.jpeg')
   })
 
