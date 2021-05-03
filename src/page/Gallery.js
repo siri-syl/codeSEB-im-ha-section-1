@@ -4,6 +4,7 @@ function Home() {
   // console.log(images) // npm start를 통해 앱을 열어, 개발자 콘솔을 통해 이미지 목록을 확인할 수 있습니다
 
   const handleClick = (image) => {
+    // TIP: parameter로 이미지가 전달어야 하며, 이벤트 객체는 쓰지 않습니다
     // TODO
   }
 
