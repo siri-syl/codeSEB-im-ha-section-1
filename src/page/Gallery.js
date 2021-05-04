@@ -1,3 +1,4 @@
+import { useState } from "react";
 import images from "../data/images"; // 제공되는 이미지를 이용하세요
 
 function Gallery() {
