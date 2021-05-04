@@ -1,6 +1,6 @@
 import images from "../data/images"; // 제공되는 이미지를 이용하세요
 
-function Home() {
+function Gallery() {
   // console.log(images) // npm start를 통해 앱을 열어, 개발자 콘솔을 통해 이미지 목록을 확인할 수 있습니다
 
   const handleClick = (image) => {
@@ -22,4 +22,4 @@ function Home() {
   </div>
 }
 
-export default Home;
+export default Gallery;
