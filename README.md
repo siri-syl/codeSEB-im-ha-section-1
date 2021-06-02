@@ -12,7 +12,6 @@
 1. `npm install`을 이용해 의존성 모듈(dependencies)를 설치할 수 있습니다.
 2. `npm test`를 통해 테스트를 진행할 수 있습니다.
 3. 테스트 초반에서는 `npm start`를 통해, Gallery 컴포넌트를 눈으로 확인할 수 있습니다.
-  - 테스트 후반에 이르러서는 조건에 따른 라우팅을 적용해야 합니다.
 
 ## Requirements
 
